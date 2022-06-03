@@ -6,6 +6,11 @@
 
 /* Default settings */
 
+body{
+background: linear-gradient(227deg, #ddede046, #b5dde925);
+
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -14,14 +19,16 @@
 
 .grid {
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(2, 1fr);
 padding: 10px;
+gap: 10px;
+align-items: stretch;
 }
 
 .box {
-  background-color: rgb(250, 245, 255);
   padding: 20px;
   text-align: start;
+  flex-wrap: nowrap;
 }
 
 a {
@@ -43,8 +50,8 @@ header {
 }
 
 .line {
-  height: 4px;
-  width: 100px;
+  height: 3px;
+  width: 100%;
   background: linear-gradient(227deg, #33a94790, #197f9e8d);
   margin: 0 auto;
   margin-bottom: 20px;
@@ -81,11 +88,25 @@ header .container {
 main {
   width: 80%;
   margin: 0 auto;
+  
 }
 
 main .top {
   padding: 30px 0;
   justify-content: space-around;
+}
+
+.top .line {
+    height: 2px;
+    width: 40%;
+    background: linear-gradient(227deg, #33a94790, #197f9e8d);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+main .line {
+  height: 10px; 
+  width: 100%;
 }
 
 main .left {
@@ -104,10 +125,11 @@ main .right {
 
 main .box .line {
   width: 100%;
+  height: 2px;
   margin-top: 10px;
 }
 
 .box img {
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 12px;
 }
