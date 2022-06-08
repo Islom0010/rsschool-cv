@@ -14,7 +14,8 @@ background: linear-gradient(227deg, #ddede046, #b5dde925);
 .flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .grid {
@@ -26,7 +27,7 @@ align-items: stretch;
 }
 
 .box {
-  padding: 20px;
+  padding: 15px;
   text-align: start;
   flex-wrap: nowrap;
 }
@@ -44,17 +45,14 @@ a:hover {
   color: rgb(128, 39, 39);
 }
 
-header {
-  background: linear-gradient(227deg, #33a94790, #197f9e8d);
-  height: 70px;
-}
 
 .line {
-  height: 3px;
+  display: flex;
+  height: 4px;
   width: 100%;
   background: linear-gradient(227deg, #33a94790, #197f9e8d);
   margin: 0 auto;
-  margin-bottom: 20px;
+  align-items: flex-end;
 }
 
 h1 {
@@ -70,10 +68,11 @@ h2 {
 ul, ol{
   list-style-type: none;
   }
-
+  
 li {
-  margin: 4px 0;
+  margin: 12px 0;
   font-family: sans-serif;
+  font-weight: 400;
   color: #000;
 }
 
@@ -81,22 +80,27 @@ i {
   color: rgba(126, 187, 189, 0.463);
 }
 
+p {
+  padding: 3px ;
+
+}
+
 /* colors */
 
 .blue {
-  color: #5486b9;
+  color: #297bee;
 }
 
 .white-yellow {
-  color: #e4ed80;
+  color: #a8ae00;
 }
 
 .yellow {
-  color: #e3d12e;
+  color: #f6fa77;
 }
 
 .pink {
-  color: #BE83AF;
+  color: #bd0e91;
 }
 
 .grey {
@@ -109,19 +113,29 @@ i {
 
 .code {
   background-color: #222;
-  width: 250px;
-  margin-top: 10px;
-  padding: 15px;
+  width: 350px;
+  margin-top: 12px;
+  padding:25px 15px;
   border-radius: 5px;
   border: solid 1px #000;
 }
 
 /* Header styles */
 
-header .container {
-  margin: 0 auto;
-  float: left;
+header {
+  background: linear-gradient(227deg, #33a94790, #197f9e8d);
+  height: 70px;
+  flex-direction: row;
+  align-items: center;
 }
+
+header .container {
+  margin:auto;
+  float: left;
+  flex-direction: row;
+  align-items: center;
+}
+
 
 /* main styles */
 main {
@@ -133,6 +147,8 @@ main {
 main .top {
   padding: 30px 0;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 
 .top .line {
@@ -159,6 +175,7 @@ main .left {
 }
 
 main .right {
+  align-items: center;
   flex-direction: column;
 }
 
@@ -174,6 +191,7 @@ main .box .line {
 }
 
 main .grid a {
+
   font-size: 16px;
   font-weight: 400;
 }
@@ -181,4 +199,15 @@ main .grid a {
 
 main .grid a:hover {
   color: rgba(126, 187, 189, 0.556);
+}
+
+.box .info {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  font-family: sans-serif;
+  font-weight: 200;
+  max-width: 70%;
+  padding: 12px 0;
+  line-height: 28px;
 }
