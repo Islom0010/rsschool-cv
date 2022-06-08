@@ -33,7 +33,7 @@ align-items: stretch;
 
 a {
   text-decoration: none;
-  color: #888;
+  color: #000;
   font-size: 24px;
   margin-right: 10px;
   font-weight: 900;
@@ -59,22 +59,61 @@ header {
 
 h1 {
   font-size: 34px;
-  opacity: 0.8;
 
 }
 
 h2 {
+  color: #000;
   font-size: 24px;
-  opacity: 0.6;
 }
 
-ul {
+ul, ol{
   list-style-type: none;
   }
 
 li {
   margin: 4px 0;
   font-family: sans-serif;
+  color: #000;
+}
+
+i {
+  color: rgba(126, 187, 189, 0.463);
+}
+
+/* colors */
+
+.blue {
+  color: #5486b9;
+}
+
+.white-yellow {
+  color: #e4ed80;
+}
+
+.yellow {
+  color: #e3d12e;
+}
+
+.pink {
+  color: #BE83AF;
+}
+
+.grey {
+  color: #999;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.code {
+  background-color: #222;
+  width: 250px;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  border: solid 1px #000;
 }
 
 /* Header styles */
@@ -132,4 +171,14 @@ main .box .line {
 .box img {
   width: 13px;
   height: 12px;
+}
+
+main .grid a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+main .grid a:hover {
+  color: rgba(126, 187, 189, 0.556);
 }
