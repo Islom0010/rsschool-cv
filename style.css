@@ -211,3 +211,32 @@ main .grid a:hover {
   padding: 12px 0;
   line-height: 28px;
 }
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background: linear-gradient(227deg, #33a94790, #197f9e8d);
+  padding: 15px;
+
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+}
+
+footer .rs {
+  height: 110px;
+  width: 110px;
+  position: absolute;
+  bottom: -24%;
+}
+
+footer span {
+  font-size: 24px;
+  font-weight: 900;
+}
