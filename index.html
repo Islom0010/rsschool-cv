@@ -20,17 +20,28 @@
     ></script>
   </head>
   <body>
-    <header class="flex">
-      <nav class="container flex">
-        <a href="">Contacts</a>
-        <a href="">About Me</a>
-        <a href="">Skills</a>
-        <a href="">Code</a>
-        <a href="">Projects</a>
-        <a href="">Education</a>
-        <a href="">Languages</a>
-      </nav>
-    </header>
+    <nav class="flex">
+      <ul class="flex">
+        <li>
+          <a href="#contact">Contacts</a>
+        </li>
+        <li>
+          <a href="#about">About Me</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#code">Code</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#language">Languages</a>
+        </li>
+      </ul>
+    </nav>
 
     <main>
       <div class="top flex">
@@ -45,7 +56,7 @@
       <div class="grid">
         <div class="box flex">
           <div>
-            <h2>Contacts</h2>
+            <h2 id="contact">Contacts</h2>
             <ul>
               <li>
                 <i class="fas fa-regular fa-location-dot"></i> Born:
@@ -55,7 +66,9 @@
               </li>
               <li>
                 <i class="fa fa-light fa-location-dot"></i> Live:
-                <a href="https://goo.gl/maps/jrBZQc9jaZHtuKu66"> Riga, Latvia</a>
+                <a href="https://goo.gl/maps/jrBZQc9jaZHtuKu66">
+                  Riga, Latvia</a
+                >
               </li>
               <li>
                 <i class="fa fa-light fa-envelope"></i> E-Mail:
@@ -78,7 +91,7 @@
           <div class="line"></div>
         </div>
         <div class="box flex">
-          <h2>
+          <h2 id="about">
             About Me
             <span class="info">
               Hello I'm Front End / Javascript Developer. A front-end developer
@@ -91,7 +104,7 @@
         </div>
         <div class="box flex">
           <div>
-            <h2>Skills</h2>
+            <h2 id="skills">Skills</h2>
             <ol>
               <li><i class="fa-brands fa-html5"></i> HTML</li>
               <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
@@ -104,7 +117,7 @@
         </div>
         <div class="box flex">
           <div>
-            <h2>Code example</h2>
+            <h2 id="code">Code example</h2>
             <h3 class="code">
               <span class="blue">function</span>
               <span class="white-yellow">multiply</span>
@@ -125,25 +138,21 @@
         </div>
         <div class="box flex">
           <div>
-            <h2>
-              Education
-            </h2>
-              <p class="info" >
-                Graduated: Lyceum under Samarkand state university
-                <br>
-  
-                Study at: Information systems management institute (Bachelor
-                degree)
-              </p>
+            <h2 id="education">Education</h2>
+            <p class="info">
+              Graduated: Lyceum under Samarkand state university
+              <br />
+
+              Study at: Information systems management institute (Bachelor
+              degree)
+            </p>
           </div>
 
           <div class="line"></div>
         </div>
         <div class="box flex">
           <div>
-            <h2>
-              Languages
-            </h2>
+            <h2 id="language">Languages</h2>
             <p class="info">
               English(B1)
               <br />
@@ -154,7 +163,7 @@
               Tadjik(C1)
               <br />
               Turkish(B1)
-            </p>  
+            </p>
           </div>
 
           <div class="line"></div>
@@ -164,9 +173,15 @@
     <footer>
       <span> &copy; 2022 created by Islom Ulmasov</span>
       <div>
-        <a href="https://www.linkedin.com/in/islom-ulmasov" target="_blank"><img src="./linkedin_logo.png" alt="linkedin logo" /></a>
-        <a href="https://github.com/Islom0010" target="_blank"><img src="./git_logo.png" alt="Git logo" /></a>
-        <a href="https://rs.school/js/" target="_blank"><img class="rs" src="./rs_school_logo.svg" alt="rs-school-js logo" /></a>
+        <a href="https://www.linkedin.com/in/islom-ulmasov" target="_blank"
+          ><img src="./linkedin.svg" alt="linkedin logo"
+        /></a>
+        <a href="https://github.com/Islom0010" target="_blank"
+          ><img src="./github.svg" alt="Git logo"
+        /></a>
+        <a href="https://rs.school/js/" target="_blank"
+          ><img class="rs" src="./rs_school_logo.svg" alt="rs-school-js logo"
+        /></a>
       </div>
     </footer>
   </body>
