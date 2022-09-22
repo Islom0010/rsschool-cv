@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "linthtml-config-htmlacademy": "^1.0.3"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
